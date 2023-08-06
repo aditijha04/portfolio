@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive PortFolio Website Design</title>
+    <link rel="stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text"> Aditi Kumari</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li> <a href = "#">Home</a></li>
+                        <li> <a href = "#">PortFolio</a></li>
+                        <li> <a href = "#">Resume</a></li>
+                        <li> <a href = "#">Blog</a></li>
+                        <li> <a href = "#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+         <div class="hero-pic">
+              <img src="./photo_2023-08-06_11-43-21.jpg" alt="profile pic">
+          </div>
+          <div class="hero-text">
+            <h5> Hi I'm <span class="input">B.tech(Cse-Student) From IIIT Manipur</span></h5>
+<h1>Aditi Kumari</h1>
+<p>
+    Meet Aditi Kumari, a bright and ambitious B.Tech student hailing from the enchanting state of Manipur, India. Aditi's pursuit of knowledge and passion for technology led her to the esteemed Indian Institute of Information Technology Manipur, where she embarked on her journey to make a mark in the world of engineering and innovation.
+</p>
+<div class="btn-group">
+    <a href="#" class="btn active"> Download CV</a>
+    <a href="#" class="btn">Contact</a>
+</div>
+<div class="social">
+    <a href="https://www.facebook.com/profile.php?id=100095553781727&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/aditi-kumari-1a3473259" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://instagram.com/aditi.jha__25?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>      
+         </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>
+    <script>
+         var togglebtn=document.querySelector(".togglebtn");
+         var nav=document.querySelector(".navlinks");
+         var links=document.querySelector(".navlinks li");
+
+         togglebtn.addEventListener("click", function(){
+           this.classList.toggle("click");
+           nav.classList.toggle("open");
+         })
+
+         var typed=new Typed(".input",{
+            strings:["B.tech(Cse-Student) From IIIT Manipur","Fronted Developer","C programmer","learning Enthusiast"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+         })
+    </script>
+</body>
+</html>
